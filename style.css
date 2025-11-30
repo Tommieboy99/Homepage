@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.skewedBox {
+    background-color: blue;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);  
+    height: 100%;  
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.imgContainer {
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.textBox {
+    height: 250px;
+    width: 350px;
+    border: 1px solid black;
+}
