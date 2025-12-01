@@ -1,43 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    box-sizing: border-box;
-    margin: 0;
+    height: 100%;
 }
 
 .header {
-    height: 30vh;
-    position: relative;
     display: flex;
-    justify-content: center;
-}
-
-.skewedBox {
-    background-color: blue;
-    transform: skewY(-5deg);
-    transform-origin: top left;
-    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);  
-    height: 100%;  
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-}
-
-.about {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    position: relative;
+    padding: 1rem;
+    background: linear-gradient(160deg, green 47%, white 48%);
 }
 
-.imgContainer {
-    height: 300px;
-    width: 250px;
-    border: 1px solid black;
+.photoContainer img {
+    width: 100%;
 }
 
-.textBox {
-    height: 250px;
-    width: 350px;
-    border: 1px solid black;
+.nameContainer {
+    position: absolute;
+}
+
+.nameContainer h1 {
+    color: white;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.socials a {
+    padding: 0.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.projectsContainer {
+  display: grid;
+  gap: 16px;
+}
+
+.project {
+    background-color: beige;
+}
+
+.project img {
+    width: 100%;
+}
+
+.details {
+    padding: 1rem;
+}
+
+.nameAndLinks {
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 1rem;
+    background: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
